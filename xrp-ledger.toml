@@ -1,0 +1,38 @@
+# Example xrp-ledger.toml file. These contents should not be considered
+# authoritative for any real entity or business.
+# Note: all fields and all sections are optional.
+
+[METADATA]
+modified = 2024-04-27T00:00:00.000Z
+expires = 2024-10-27T00:00:00.000Z
+
+[[VALIDATORS]]
+public_key = "nHUwGQrfZfieeLFeGRdGnAmGpHBCZq9wvm5c59wTc2JhJMjoXmd8"
+attestation = "5FD3774BA6976ED0994EC9D6D043F155E44164FA781DEDF13F746BBB54CF2F6B"
+network = "main"
+owner_country = "us"
+server_country = "us"
+unl = "https://vl.ripple.com"
+
+[[ACCOUNTS]]
+address = "rnYV6zhpyYgJvxu5gvorLQr5QbWaswnyn8"
+desc = "pjripperio.xrp"
+
+[[SERVERS]]
+json_rpc = "https://s1.ripple.com:51234/"
+ws = "wss://s1.ripple.com/"
+peer = "https://s1.ripple.com:51235/"
+desc = "General purpose server cluster"
+
+[[SERVERS]]
+json_rpc = "https://s2.ripple.com:51234/"
+ws = "wss://s2.ripple.com/"
+peer = "https://s2.ripple.com:51235/"
+desc = "Full-history server cluster"
+
+[[SERVERS]]
+json_rpc = "https://s.testnet.rippletest.net:51234/"
+ws = "wss://s.testnet.rippletest.net:51233/"
+peer = "https://s.testnet.rippletest.net:51235/"
+network = "testnet"
+desc = "Test Net public server cluster"
